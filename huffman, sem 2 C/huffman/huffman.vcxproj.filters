@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\structures">
+      <UniqueIdentifier>{3678b0e9-ab34-40b0-af62-edee6ca1c53e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\structures">
+      <UniqueIdentifier>{4c0e8660-0ccb-4f9e-a9bb-9b267b014d6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.c">
+      <Filter>Source Files\structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="list.c">
+      <Filter>Source Files\structures</Filter>
+    </ClCompile>
+    <ClCompile Include="translation.c">
+      <Filter>Source Files\structures</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>Source Files\structures</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>Header Files\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>Header Files\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="translation.h">
+      <Filter>Header Files\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Header Files\structures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Test cases\tekst1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Test cases\tekst2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Test cases\tekst3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Test cases\tekst4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Test cases\tekst5.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Test cases\teskt 6.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

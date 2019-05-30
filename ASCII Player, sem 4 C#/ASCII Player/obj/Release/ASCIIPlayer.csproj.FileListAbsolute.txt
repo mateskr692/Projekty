@@ -1,0 +1,44 @@
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\avcodec-57.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\avdevice-57.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\avfilter-6.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\avformat-57.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\avutil-55.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\postproc-54.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\swresample-2.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\swscale-4.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.dll.config
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\ASCII Player.exe.config
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\ASCII Player.exe
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\ASCII Player.pdb
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Imaging.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Math.Core.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Math.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Statistics.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.FFMPEG.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.VFW.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\ConverterASCII.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\ConverterASCII.pdb
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Imaging.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Math.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Math.Core.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Statistics.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.FFMPEG.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\bin\Release\Accord.Video.VFW.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCIIPlayer.csprojAssemblyReference.cache
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\MainWindow.g.cs
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\App.g.cs
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player_Content.g.cs
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player_MarkupCompile.cache
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player_MarkupCompile.lref
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\MainWindow.baml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player.g.resources
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII_Player.Properties.Resources.resources
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCIIPlayer.csproj.GenerateResource.cache
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCIIPlayer.csproj.CoreCompileInputs.cache
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCIIPlayer.csproj.CopyComplete
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player.exe
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ASCII Player\obj\Release\ASCII Player.pdb

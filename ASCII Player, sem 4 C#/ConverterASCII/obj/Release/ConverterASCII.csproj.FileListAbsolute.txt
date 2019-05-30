@@ -1,0 +1,17 @@
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.dll.config
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\ConverterASCII.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\ConverterASCII.pdb
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Imaging.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Math.Core.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Math.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Statistics.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Imaging.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Math.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Math.Core.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\bin\Release\Accord.Statistics.xml
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\obj\Release\ConverterASCII.csproj.CoreCompileInputs.cache
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\obj\Release\ConverterASCII.csproj.CopyComplete
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\obj\Release\ConverterASCII.dll
+C:\Users\Skrzelik\source\repos\6091faf5-gr51-repo\Projekt\ASCII Player\ConverterASCII\obj\Release\ConverterASCII.pdb

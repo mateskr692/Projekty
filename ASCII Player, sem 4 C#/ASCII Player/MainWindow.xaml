@@ -1,0 +1,314 @@
+﻿<Window x:Class="ASCIIPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ASCIIPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" MinWidth="800" MinHeight="600">
+
+    <Border Padding="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Image Preview-->
+            <Image MinWidth="300" MinHeight="300" Source="{Binding Path=ASCII_Image, Mode=OneWay}" Margin="0,0,0,0.4"/>
+
+            <TabControl x:Name="TabControl_Options" TabStripPlacement="Right" Margin="20,0,-0.4,0.4" HorizontalAlignment="Right" Grid.Column="1" Width="300">
+
+                <!--Stack Tabs Vertically instead of horizontaly-->
+                <TabControl.ItemContainerStyle>
+                    <Style TargetType="TabItem">
+                        <Setter Property="LayoutTransform">
+                            <Setter.Value>
+                                <RotateTransform Angle="90" />
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.ItemContainerStyle>
+
+
+                <!--General Options-->
+                <TabItem Header="General">
+                    <Border Padding="10">
+                        <StackPanel>
+                            <!--Input-->
+                            <TextBlock Text="Open: " Margin="0,0,0,5"/>
+                            <Grid Margin="0,0,0,20" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+
+                                <TextBox x:Name="TextBox_Input" Grid.Column="0" MinWidth="100" Text="{Binding Path=Input, UpdateSourceTrigger=PropertyChanged}" />
+                                <Button x:Name="Button_openFile" Grid.Column="2" Content="Browse" Click="Button_openFile_Click" />
+
+                            </Grid>
+
+                            <!--Color-->
+                            <CheckBox x:Name="CheckBox_Color" Checked="CheckBox_Color_Checked" Unchecked="CheckBox_Color_Unchecked" IsChecked="{Binding Path=UseColor}" >Use Color</CheckBox>
+                            <Border Name="Border_UseColor" IsEnabled="False">
+                                <StackPanel Margin="20,0,0,20">
+                                    <TextBlock Text="Color Render Mode:" Margin="0,0,0,5" />
+                                    <RadioButton GroupName="ColorSpeed" IsChecked="False">Slow</RadioButton>
+                                    <RadioButton GroupName="ColorSpeed" IsChecked="{Binding Path=FastColor}">Fast</RadioButton>
+                                </StackPanel>
+                            </Border>
+
+
+                            <!--Output-->
+                            <CheckBox Name="SaveOutput" Margin="0,0,0,5" Checked="SaveOutput_Checked" Unchecked="SaveOutput_Unchecked">Save Output</CheckBox>
+                            <Border Name="Border_Save" IsEnabled="False">
+                                <Grid Margin="0,0,0,20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBox x:Name="TextBox_Output"  MinWidth="100" Text="{Binding Path=Output, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <Button x:Name="Button_SaveFile" Grid.Column="2" Content="Browse" Click="Button_SaveFile_Click"/>
+                                </Grid>
+                            </Border>
+
+                            <!--Control buttons-->
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Button x:Name="Button_Convert"  Margin="0" Click="Button_Convert_Click" Content="Render Video" Padding="3,1" MinWidth="100"/>
+                                <Button x:Name="Button_Pause" Grid.Column="2" Content="Pause" Padding="3,1" Click="Button_Pause_Click"/>
+                                <Button x:Name="Button_SaveImage" Grid.Row="1" Margin="0,10,0,0" Content="Save Image" MinWidth="100" Click="Button_SaveImage_Click"/>
+                                <Button x:Name="Button_CopyText" Grid.Row="2" Margin="0,10,0,0" Content="Copy Text" MinWidth="100" Click="Button_CopyText_Click"/>
+
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </TabItem>
+
+
+
+                <!--Font Options-->
+                <TabItem Header="Font" Padding="6,2,10,2">
+                    <Border Padding="10">
+                        <StackPanel>
+                            <!--Current Font-->
+                            <Grid Margin="0,0,0,10" MinWidth="120">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="Font:" />
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock Name="FontName" Text="{Binding Path=FontName, Mode=OneWay}"  />
+                                    <TextBlock Name="FontStyle" Text="{Binding Path=FontStyle, Mode=OneWay}"/>
+                                    <TextBlock Name="FontSize" Text="{Binding Path=FontSize, Mode=OneWay}"/>
+                                </StackPanel>
+
+                            </Grid>
+
+                            <Button x:Name="Button_ChooseFont" Content="Change Font" Click="Button_ChooseFont_Click" Padding="1" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+                            
+                            <!--Character List-->
+                            <Grid Margin="0,0,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Text="Characters" Margin="0,0,5,0" />
+                                <TextBox Name="TextBox_FontCharacters" Grid.Column="1" Text="{Binding Path=FontCharacters, UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                            
+                            
+
+
+                            <!--Color-->
+                            <Grid Margin="0,0,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="10"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="Foreground Color"/>
+                                <Rectangle Name="Rectangle_ColorForeground" Grid.Column="1" Margin="10,0" Fill="{Binding Path=ForegroundBrush, Mode=OneWay}" Stroke="Black" />
+                                <Button Name="Button_ColorForeground" Grid.Column="2" Click="Button_ColorForeground_Click">Change</Button>
+
+                                <TextBlock Text="Background Color" Grid.Row="2" />
+                                <Rectangle Name="Rectangle_ColorBackground" Grid.Column="1"  Margin="10,0" Fill="{Binding Path=BackgroundBrush, Mode=OneWay}" Stroke="Black" Grid.Row="2" />
+                                <Button Name="Button_ColorBackground" Grid.Column="2" Grid.Row="2" Click="Button_ColorBackground_Click">Change</Button>
+
+                            </Grid>
+
+
+                            <Image Name="Image_FontPreview" HorizontalAlignment="Left" Source="{Binding Path=FontPreview, Mode=OneWay}" Margin="0,0,0,20" VerticalAlignment="Top" Stretch="None"/>
+
+                        </StackPanel>
+                    </Border>
+                </TabItem>
+
+
+
+                <!--Splitting Options-->
+                <TabItem Header="Splitting">
+                    <Border Padding="10">
+                        <StackPanel>
+                            <Grid Margin="0,0,0,20" MinWidth="120">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="Splitter:" />
+                                <ComboBox Name="ComboBox_Splitter" Grid.Column="2" MinWidth="120" SelectionChanged="ComboBox_Splitter_SelectionChanged">
+                                    <ComboBoxItem x:Name="ComboBoxItem_SplitterRegular" Content="Regular"/>
+                                    <ComboBoxItem x:Name="ComboBoxItem_SplitterEdge" Content="Edge Detection"/>
+                                </ComboBox>
+
+                            </Grid>
+                            <Grid Margin="20,5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="5"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="Width: "/>
+                                <TextBox Name="TextBox_SplitterWidth" Grid.Column="2" Text="{Binding Path=SplitterWidth, UpdateSourceTrigger=PropertyChanged}"/>
+                                <TextBlock Text="Height: " Grid.Row="2"/>
+                                <TextBox Name="TextBox_SplitterHeight" Grid.Column="2" Grid.Row="2" Text="{Binding Path=SplitterHeight, UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </TabItem>
+
+
+
+                <!--Comparator Options-->
+                <TabItem Header="Comparator">
+                    <Border Padding="10">
+                        <StackPanel>
+
+                            <!--Available Comparators-->
+                            <Grid Margin="0,0,0,20" MinWidth="120">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="Comparator:" />
+                                <ComboBox Name="ComboBox_Comparator" Grid.Column="2" MinWidth="100" Margin="0" SelectionChanged="ComboBox_Comparator_SelectionChanged">
+                                    <ComboBoxItem Name="ComboBoxItem_ComparatorCentralized" Content="Centralized"/>
+                                    <ComboBoxItem Name="ComboBoxItem_ComparatorCellular" Content="Cellular"/>
+                                    <ComboBoxItem Name="ComboBoxItem_ComparatorGaussian" Content="Gaussian"/>
+                                    <ComboBoxItem Name="ComboBoxItem_ComparatorGrayscale" Content="Grayscale"/>
+                                    <ComboBoxItem Name="ComboBoxItem_ComparatorExact" Content="Exact"/>
+                                </ComboBox>
+                            </Grid>
+
+                            <!--Additional Options for Certain Comparators-->
+
+                            <!--Centralized-->
+                            <Border Name="Border_ComparatorCentralized" Visibility="Visible">
+                                <StackPanel>
+                                    <Grid Margin="20,5,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="10"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <!--Margins-->
+                                        <TextBlock Text="Left / Right Margin" Margin="0,0,0,5"/>
+                                        <Slider Name="CentralizedLeftRightMargin" MinWidth="150" 
+                                                    Minimum="0.05" Maximum="0.45" TickFrequency="0.05" Value="{Binding Path=Centralized_LRMargin, UpdateSourceTrigger=PropertyChanged}" SmallChange="0.05" LargeChange="0.05"
+                                                    TickPlacement="BottomRight" AutoToolTipPlacement="BottomRight" AutoToolTipPrecision="2" IsSnapToTickEnabled="True" Grid.Row="1" />
+
+                                        <TextBlock Text="Up / Down Margin" Grid.Row="2" Margin="0,0,0,5"/>
+                                        <Slider Name="CentralizedUpDownMargin" MinWidth="150" 
+                                                    Minimum="0.05" Maximum="0.45" TickFrequency="0.05" Value="{Binding Path=Centralized_UDMargin, UpdateSourceTrigger=PropertyChanged}" SmallChange="0.05" LargeChange="0.05"
+                                                    TickPlacement="BottomRight" AutoToolTipPlacement="BottomRight" AutoToolTipPrecision="2" IsSnapToTickEnabled="True" Grid.Row="3" />
+
+                                        <!--Weights-->
+                                        <TextBlock Text="Central Weight" Grid.Row="4" Margin="0,20,0,0"/>
+                                        <TextBox Name="CentralizedCenterWeight" Text="{Binding Path=Centralized_CenterWeight, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="2" Margin="0,20,0,0" HorizontalAlignment="Left" MinWidth="50"/>
+
+                                        <TextBlock Text="Left / Right Weight" Grid.Row="5" Margin="0,10,0,0"/>
+                                        <TextBox Name="CentralizedLeftRightWeight" Text="{Binding Path=Centralized_LRWeight, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="2" Margin="0,10,0,0" HorizontalAlignment="Left" MinWidth="50"/>
+
+                                        <TextBlock Text="Up / Down Weight" Grid.Row="6" Margin="0,10,0,0"/>
+                                        <TextBox Name="CentralizedUpDownWeight" Text="{Binding Path=Centralized_UDWeight, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="2" Margin="0,10,0,0" HorizontalAlignment="Left" MinWidth="50"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+
+                            <!--Cellular/Gaussian-->
+                            <Border Name="Border_ComparatorCellular" Visibility="Collapsed">
+                                <StackPanel>
+                                    <Grid Margin="20,5,0,0" HorizontalAlignment="Left">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="10"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Text="X-Dimension"/>
+                                        <TextBox Name="CellularWidth" Grid.Column="2" MinWidth="50" Text="{Binding Path=Cellular_X, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                        <TextBlock Text="Y-Dimension" Grid.Row="1" Margin="0,5,0,0"/>
+                                        <TextBox Name="CellularHeight" Grid.Column="2" MinWidth="50" Grid.Row="1" Margin="0,5,0,0" Text="{Binding Path=Cellular_Y, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+
+
+                        </StackPanel>
+                    </Border>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+
+</Window>

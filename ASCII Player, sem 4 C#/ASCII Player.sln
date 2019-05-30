@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASCIIPlayer", "ASCII Player\ASCIIPlayer.csproj", "{22D91418-0809-4B4B-8BEF-EED520DE002F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E659FDC-8238-4535-A2D6-C4583151C99F} = {0E659FDC-8238-4535-A2D6-C4583151C99F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterASCII", "ConverterASCII\ConverterASCII.csproj", "{0E659FDC-8238-4535-A2D6-C4583151C99F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22D91418-0809-4B4B-8BEF-EED520DE002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D91418-0809-4B4B-8BEF-EED520DE002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D91418-0809-4B4B-8BEF-EED520DE002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D91418-0809-4B4B-8BEF-EED520DE002F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E659FDC-8238-4535-A2D6-C4583151C99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E659FDC-8238-4535-A2D6-C4583151C99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E659FDC-8238-4535-A2D6-C4583151C99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E659FDC-8238-4535-A2D6-C4583151C99F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7400995-0F93-4777-A691-0ED62010F426}
+	EndGlobalSection
+EndGlobal
